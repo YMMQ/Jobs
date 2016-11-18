@@ -1,0 +1,1 @@
+json.array! @t_degrees, partial: 't_degrees/t_degree', as: :t_degree

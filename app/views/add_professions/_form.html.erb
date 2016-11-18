@@ -1,0 +1,32 @@
+<%= form_for(add_profession) do |f| %>
+  <% if add_profession.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(add_profession.errors.count, "error") %> prohibited this add_profession from being saved:</h2>
+
+      <ul>
+      <% add_profession.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :add_id %>
+    <%= f.text_field :add_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :profession_id %>
+    <%= f.text_field :profession_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :qty %>
+    <%= f.number_field :qty %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

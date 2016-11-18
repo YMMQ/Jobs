@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  organization: one
+  profession: one
+  city: one
+  sdate: 2016-11-18
+  endyear: 2016-11-18
+  user: one
+  remarks: MyString
+
+two:
+  organization: two
+  profession: two
+  city: two
+  sdate: 2016-11-18
+  endyear: 2016-11-18
+  user: two
+  remarks: MyString

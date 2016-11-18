@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  add: one
+  profession: one
+  qty: 1
+
+two:
+  add: two
+  profession: two
+  qty: 1

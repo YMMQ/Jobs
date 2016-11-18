@@ -1,0 +1,52 @@
+<%= form_for(experience) do |f| %>
+  <% if experience.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(experience.errors.count, "error") %> prohibited this experience from being saved:</h2>
+
+      <ul>
+      <% experience.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :organization_id %>
+    <%= f.text_field :organization_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :profession_id %>
+    <%= f.text_field :profession_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :city_id %>
+    <%= f.text_field :city_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sdate %>
+    <%= f.date_select :sdate %>
+  </div>
+
+  <div class="field">
+    <%= f.label :endyear %>
+    <%= f.date_select :endyear %>
+  </div>
+
+  <div class="field">
+    <%= f.label :user_id %>
+    <%= f.text_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :remarks %>
+    <%= f.text_field :remarks %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

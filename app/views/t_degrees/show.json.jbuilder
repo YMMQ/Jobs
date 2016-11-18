@@ -1,0 +1,1 @@
+json.partial! "t_degrees/t_degree", t_degree: @t_degree

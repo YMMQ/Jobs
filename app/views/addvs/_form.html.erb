@@ -1,0 +1,52 @@
+<%= form_for(addv) do |f| %>
+  <% if addv.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(addv.errors.count, "error") %> prohibited this addv from being saved:</h2>
+
+      <ul>
+      <% addv.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :addv_title %>
+    <%= f.text_field :addv_title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :image %>
+    <%= f.text_field :image %>
+  </div>
+
+  <div class="field">
+    <%= f.label :newspaper_id %>
+    <%= f.text_field :newspaper_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :city_id %>
+    <%= f.text_field :city_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :organization_id %>
+    <%= f.text_field :organization_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :addv_date %>
+    <%= f.date_select :addv_date %>
+  </div>
+
+  <div class="field">
+    <%= f.label :last_date %>
+    <%= f.date_select :last_date %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
